@@ -18,3 +18,8 @@ Equilibrium temperature profile for the Newtonian relaxation term given by Wu & 
 
 Equilibrium temperature profile for the Newtonian relaxation term used in the SCDM. 
 
+--- Main reference ---
+
+Jucker, M., S. Fueglistaler, and G. K. Vallis (2014): Stratospheric sudden warmings in an idealized GCM, J. Geophys. Res. Atmos., 119, 11 054–11 064, doi:10.1002/2014JD022170.
+
+Wu, Z. and T. Reichler (2018): Towards a More Earth-like Circulation in Idealized Models, J. Adv. Model. Earth Sys., 30(24), 10101-10116, doi:10.1029/2018MS001356.
