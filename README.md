@@ -2,9 +2,8 @@
 
 Simplified Chemistry-Dynamical Model
 
-We extend the usage of the GFDL's idealized general circulation model by  a linear ozone scheme 
+We extend the GFDL's idealized general circulation model (GCM) by incporating a linear ozone scheme and a parameterization method for the shortwave ozone heating in the model. We call the new model as simplified chemistry-dynamical model (SCDM), which allows more efficient simulations of ozone-circulation interaction with a lower computational cost. Our model is based on an improving version of the idealized GCM proposed by Wu and Reichler (2018), who optimized the Newtonian relaxation term by introducing a zonally asymmetric equilibrium temperature (Teq) profile. We use their D7 model setup with surface drag being 1.35 1/day and with the Newtonian relaxation time scale (Tau) as in Jucker et al. (2014). Since the shortwave ozone effet is internally described by the SCDM, we update the Teq from Wu and Reichler (2018) to avoid accounting additional shortwave ozone heating in the model. Therefore, the overall diabatic heating of the SCMD becomes the sum of the Newtonian relaxztion term and the shortwave ozone heating. A detailed description for the Teq correction procedure and an initial evaluation of the SCDM ozone simulation are described in Hong and Reichler (2021). 
 
-Our experiments are similar to the Held and Suarez (1994) benchmark. We start our experiments using an analytically determined equilibrium temperature (Teq) and Newtonian relaxation time scale (Tau) profile after Jucker et al. (2014). We then gradually optimize Teq by introducing zonal asymmetries into it using the iterative procedure following Chang (2006). The Teq we provide here corresponds to iteration 31 of DRAG experiment D3 with the surface drag being 0.9 1/day. The file contains 12 monthly Teq fields, each varying in the three spatial dimensions. We also employ an actual orography with land and ocean. Given these modifications, the GCM produces temperatures and diabatic heating that are very similar to that of the reanalysis. A detailed description of the improved model and the outcomes of the various drag experiments are described in Wu and Reichler (2018a, 2018b).
 
 This code is based on JFV-strat (https://github.com/mjucker/JFV-strat). The following program and modules were modified:
 • atmos_model
@@ -25,6 +24,8 @@ Cariolle, D. and H. Teyssèdre (2007): A revised linear ozone photochemistry par
 Chang, E. K. M. (2006): An idealized nonlinear model of the Northern Hemisphere winter storm tracks, J. Atmos. Sci., 63, 1818–1839.
 
 Held, I. M. and M. J. Suarez (1994): A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models, Bull. Amer. Meteor. Soc., 75, 1825–1830.
+
+Hong, H.-J. and T. Reichler (2021): A simplified chemistry-dynamical model, J. Adv. Model. Earth Sys. (in preparation)
 
 Jucker, M., S. Fueglistaler, and G. K. Vallis (2014): Stratospheric sudden warmings in an idealized GCM, J. Geophys. Res. Atmos., 119, 11054–11064, doi:10.1002/2014JD022170.
 
