@@ -1,6 +1,9 @@
 # HR_SCDM
 
-Improving GFDL's Idealized General Circulation Model
+Simplified Chemistry-Dynamical Model
+
+We extend the usage of the GFDL's idealized general circulation model by  a linear ozone scheme 
+
 Our experiments are similar to the Held and Suarez (1994) benchmark. We start our experiments using an analytically determined equilibrium temperature (Teq) and Newtonian relaxation time scale (Tau) profile after Jucker et al. (2014). We then gradually optimize Teq by introducing zonal asymmetries into it using the iterative procedure following Chang (2006). The Teq we provide here corresponds to iteration 31 of DRAG experiment D3 with the surface drag being 0.9 1/day. The file contains 12 monthly Teq fields, each varying in the three spatial dimensions. We also employ an actual orography with land and ocean. Given these modifications, the GCM produces temperatures and diabatic heating that are very similar to that of the reanalysis. A detailed description of the improved model and the outcomes of the various drag experiments are described in Wu and Reichler (2018a, 2018b).
 
 This code is based on JFV-strat (https://github.com/mjucker/JFV-strat). The following program and modules were modified:
@@ -28,5 +31,3 @@ Jucker, M., S. Fueglistaler, and G. K. Vallis (2014): Stratospheric sudden warmi
 Lacis, A. A. and J. Hansen (1974): A parameterization for the absorption of solar radiation in the earth’s atmosphere, J. Atmos. Sci., 31, 118–133, doi:10.1175/1520-0469(1974)031%3C0118:APFTAO%3E2.0.CO;2.
 
 Wu, Z. and T. Reichler (2018): Towards a More Earth-like Circulation in Idealized Models, J. Adv. Model. Earth Sys., 30(24), 10101-10116, doi:10.1029/2018MS001356.
-
-Wu, Z. and T. Reichler (2019): Surface Control of the Frequency of Stratospheric Sudden Warming Events, J. Climate, 32(15), 4753-4766, doi:10.1175/JCLI-D-18-0801.1.
