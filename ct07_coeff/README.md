@@ -12,4 +12,4 @@ Input surface albedo from MERRA2 climatology for shortwave ozone heating paramet
 
 --- Main reference ---
 
-Cariolle, D. and H. Teyssèdre (2007): A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations, Atmospheric Chemistry and Physics, 7, 2183–2196, doi.org:10.5194/acp-7-2183-2007.
+Cariolle, D. and H. Teyssèdre (2007): A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations, Atmos. Chem. Phys., 7, 2183–2196, doi:10.5194/acp-7-2183-2007.
