@@ -2,10 +2,9 @@
 
 Simplified Chemistry-Dynamical Model
 
-We extend the GFDL's idealized general circulation model (GCM) by incporating a linear ozone scheme and a parameterization method for the shortwave ozone heating in the model. We call the new model as simplified chemistry-dynamical model (SCDM), which allows more efficient simulations of ozone-circulation interaction with a lower computational cost. Our model is based on an improving version of the idealized GCM proposed by Wu and Reichler (2018), who optimized the Newtonian relaxation term by introducing a zonally asymmetric equilibrium temperature (Teq) profile. We use their D7 model setup with surface drag being 1.35 1/day and with the Newtonian relaxation time scale (Tau) as in Jucker et al. (2014). Since the shortwave ozone effet is internally described by the SCDM, we update the Teq from Wu and Reichler (2018) to avoid accounting additional shortwave ozone heating in the model. Therefore, the overall diabatic heating of the SCMD becomes the sum of the Newtonian relaxztion term and the shortwave ozone heating. A detailed description for the Teq correction procedure and an initial evaluation of the SCDM ozone simulation are described in Hong and Reichler (2021). 
+We extend the GFDL's idealized general circulation model (GCM) by incporating a linear ozone scheme and a parameterization method for the shortwave ozone heating in the model. We call the new model as simplified chemistry-dynamical model (SCDM), which allows more efficient simulations of ozone-circulation interaction with a much lower computational cost. Our model is based on the improving version of the idealized GCM proposed by Wu and Reichler (2018), who optimized the Newtonian relaxation term by introducing a zonally asymmetric equilibrium temperature (Teq) profile. We use their D7 model setup with surface drag being 1.35 1/day and with the Newtonian relaxation time scale (Tau) as in Jucker et al. (2014). Since the shortwave ozone effet is internally described by the SCDM, we update the Teq profile used in Wu and Reichler (2018) to avoid accounting additional shortwave ozone heating from the Newtonian term. Therefore, the overall diabatic heating in the SCMD becomes the sum of the Newtonian relaxztion term and the shortwave ozone heating. A detailed description for the Teq correction procedure and an initial evaluation of the SCDM ozone simulation are described in Hong and Reichler (2021). 
 
-
-This code is based on JFV-strat (https://github.com/mjucker/JFV-strat). The following program and modules were modified:
+This code is based on WR_simpleGCM (https://github.com/ZhengWinnieWu/WR_simpleGCM.git). The following program and modules were modified:
 • atmos_model
 • hs_forcing_mod
 • atmosphere_mod
@@ -20,8 +19,6 @@ The new code reads in twelve monthly Teq and Tau profiles during initialization 
 --- Main reference ---
 
 Cariolle, D. and H. Teyssèdre (2007): A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations, Atmos. Chem. Phys., 7, 2183–2196, doi:10.5194/acp-7-2183-2007.
-
-Chang, E. K. M. (2006): An idealized nonlinear model of the Northern Hemisphere winter storm tracks, J. Atmos. Sci., 63, 1818–1839.
 
 Held, I. M. and M. J. Suarez (1994): A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models, Bull. Amer. Meteor. Soc., 75, 1825–1830.
 
