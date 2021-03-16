@@ -22,18 +22,17 @@ and three additional modules are introduced:
 
 The new code simulates ozone as a passive tracer in the idealized GCM. At each model step, ozone tendency is calculated according to temperautre, ozone, and column ozone profiles, and the ozone concentration is updated by the resulting ozone tendency. At the same time, temperature tendency is updated by the shortwave parameterizaion according to instantaneous model ozone concentrations. The SCDM provides a flexible way to describe ozone in the model, in which ozone can be either internally generated or prescribed by an external file. Certain new variables are read in through the name-list:
 
-• no_ozone = .false.
+• no_ozone = .false. (#option: .true. or .false.)
 
-• ozone_option = 'ct07_ozone'  (option: 'ct07_ozone' or 'from_file')
+• ozone_option = 'ct07_ozone'  (#option: 'ct07_ozone' or 'from_file')
 
-• ozone_file = 'EXTERNAL_OZONE_FILE_NAME'  (used only when ozone_option = 'from_file')
+• ozone_file = 'EXTERNAL_OZONE_FILE_NAME'  (#used only when ozone_option = 'from_file')
 
-• no_ozone_forcing = .false.
+• no_ozone_forcing = .false. (#option: .true. or .false.)
 
 • ozone_sw_option = 'ls74_sw'
 
 • albedo_file = $root/ct07_coeff/INPUT_MERRA2_ALBEDO_1980_2018.nc
-
 
 --- Main reference ---
 
