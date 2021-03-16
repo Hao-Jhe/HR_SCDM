@@ -6,14 +6,14 @@ We extend the GFDL's idealized general circulation model (GCM; Held and Suarez, 
 
 This code is based on WR_simpleGCM (https://github.com/ZhengWinnieWu/WR_simpleGCM.git). The following program and modules were modified:
 
-• atmos_model
-• hs_forcing_mod
+• atmos_model 
+• hs_forcing_mod 
 • atmosphere_mod
 
 and three additional modules are introduced:
 
-• ct07_ozone_mod
-• ozone_forcing_mod
+• ct07_ozone_mod 
+• ozone_forcing_mod 
 • zenith_angle_mod.
 
 The 
