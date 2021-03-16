@@ -10,3 +10,7 @@ Input coefficient files for ozone scheme in the SCDM. The relaxation ozone profi
 
 Input surface albedo from MERRA2 climatology for shortwave ozone heating parameterization method. 
 
+
+Main reference:
+
+Cariolle, D. and H. Teyssèdre (2007): A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations, Atmospheric Chemistry and Physics, 7, 2183–2196, doi.org:10.5194/acp-7-2183-2007.
