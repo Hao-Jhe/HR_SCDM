@@ -20,13 +20,20 @@ and three additional modules are introduced:
 
 • zenith_angle_mod.
 
-The 
+The new code simulates ozone as a passive tracer in the idealized GCM. At each model step, ozone tendency is calculated according to temperautre, ozone, and column ozone profiles, and the ozone concentration is updated by the resulting ozone tendency. At the same time, temperature tendency is updated by the shortwave parameterizaion according to instantaneous model ozone concentrations. The SCDM provides a flexible way to describe ozone in the model, in which ozone can be either internally generated or prescribed by an external file. Certain new variables are read in through the name-list:
 
-The new code reads in twelve monthly Teq and Tau profiles during initialization and then uses linear interpolation to calculate daily fields. The interpolation is done only once during initialization to reduce the actual run time. Additional modification concerns the inclusion of a more flexible surface drag. The Rayleigh damping (surface drag) in the original code is defined in module “hs_forcing_mod”, which is a fixed number. In our modification, we introduce the Rayleigh damping as a two-dimensional matrix (longitude-latitude), and allow the code to read in the Rayleigh damping data files. Certain new variables are read in through the name-list:
-• equilibrium_option = 'from_file',
-• drag_file_name = 'name of drag data file.txt',
-• temp_file = 'name of Teq data file.nc',
-• tau_file = 'name of Tau data file.nc'.
+• no_ozone = .false.
+
+• ozone_option = 'ct07_ozone'  (option: 'ct07_ozone' or 'from_file')
+
+• ozone_file = 'EXTERNAL_OZONE_FILE_NAME'  (used only when ozone_option = 'from_file')
+
+• no_ozone_forcing = .false.
+
+• ozone_sw_option = 'ls74_sw'
+
+• albedo_file = $root/ct07_coeff/INPUT_MERRA2_ALBEDO_1980_2018.nc
+
 
 --- Main reference ---
 
