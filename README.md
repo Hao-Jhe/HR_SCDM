@@ -15,12 +15,17 @@ The new code reads in twelve monthly Teq and Tau profiles during initialization 
 • temp_file = 'name of Teq data file.nc',
 • tau_file = 'name of Tau data file.nc'.
 
-The main references are:
-Chang, E. K. M., 2006: An idealized nonlinear model of the Northern Hemisphere winter storm tracks. J. Atmos. Sci., 63, 1818–1839.
+--- Main reference ---
 
-Held, I. I. M., and M. M. J. Suarez, 1994: A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models. Bull. Amer. Meteor. Soc., 75, 1825–1830.
+Cariolle, D. and H. Teyssèdre (2007): A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations, Atmos. Chem. Phys., 7, 2183–2196, doi:10.5194/acp-7-2183-2007.
 
-Jucker, M., S. Fueglistaler, and G. K. Vallis, 2014: Stratospheric sudden warmings in an idealized GCM. J. Geophys. Res. Atmos., 119, 11 054–11 064, doi:10.1002/2014JD022170.
+Chang, E. K. M. (2006): An idealized nonlinear model of the Northern Hemisphere winter storm tracks, J. Atmos. Sci., 63, 1818–1839.
+
+Held, I. M. and M. J. Suarez (1994): A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models, Bull. Amer. Meteor. Soc., 75, 1825–1830.
+
+Jucker, M., S. Fueglistaler, and G. K. Vallis (2014): Stratospheric sudden warmings in an idealized GCM, J. Geophys. Res. Atmos., 119, 11054–11064, doi:10.1002/2014JD022170.
+
+Lacis, A. A. and J. Hansen (1974): A parameterization for the absorption of solar radiation in the earth’s atmosphere, J. Atmos. Sci., 31, 118–133, doi:10.1175/1520-0469(1974)031%3C0118:APFTAO%3E2.0.CO;2.
 
 Wu, Z. and T. Reichler (2018): Towards a More Earth-like Circulation in Idealized Models, J. Adv. Model. Earth Sys., 30(24), 10101-10116, doi:10.1029/2018MS001356.
 
